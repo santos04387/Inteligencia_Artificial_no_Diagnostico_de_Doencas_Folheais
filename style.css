@@ -14,7 +14,7 @@ body {
 
 /* Cabeçalho com paleta de Azul Tecnológico */
 header {
-    background: #70c2e2;
+    background: #3cc475;
     color: white;
     padding: 15px 20px;
     position: sticky;
@@ -48,7 +48,7 @@ header {
 .menu-toggle div {
     height: 4px;
     width: 100%;
-    background: white;
+    background: rgb(216, 58, 58);
     border-radius: 2px;
     transition: all 0.3s ease-in-out;
 }
@@ -62,7 +62,7 @@ nav {
     transform: translateX(-50%);
     width: 90%;
     max-width: 400px;
-    background: #0d47a1;
+    background: #0d48a100;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 6px 15px rgba(0,0,0,0.2);
