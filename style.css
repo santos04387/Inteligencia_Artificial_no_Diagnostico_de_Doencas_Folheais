@@ -1,4 +1,4 @@
-* /* Reset básico */
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -157,16 +157,50 @@ section p {
     text-align: justify;
 }
 
-/* Elemento de Imagem Temática - LINK CORRIGIDO DA CLARO */
+/* Imagem Conceitual Gerada 100% por Código CSS (Design Tecnológico/Agrícola) */
 .theme-image {
     width: 100%;
     height: 350px;
     margin-top: 25px;
     border-radius: 8px;
-    background-image: url('https://claro.com.br');
-    background-size: cover;
-    background-position: center;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    background: linear-gradient(135deg, #1B5E20 0%, #4CAF50 50%, #00E676 100%);
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Detalhe de grade tecnológica na imagem */
+.theme-image::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+/* Texto futurista sobreposto na imagem gerada */
+.image-overlay-text {
+    position: relative;
+    color: white;
+    font-family: monospace;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    border: 2px dashed rgba(255,255,255,0.6);
+    padding: 10px 20px;
+    border-radius: 4px;
+    animation: pulse 2s infinite alternate;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 0.8; }
+    100% { transform: scale(1.05); opacity: 1; }
 }
 
 section ul {
@@ -224,6 +258,6 @@ footer {
     }
 
     .theme-image {
-        height: 450px; /* Imagem maior e mais nítida em monitores grandes */
+        height: 450px;
     }
 }
