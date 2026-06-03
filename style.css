@@ -1,4 +1,4 @@
-/* Reset básico */
+c/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -23,13 +23,22 @@ header {
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
 }
 
+/* MODIFICADO: Distribui o texto na esquerda e o botão na direita */
 .header-container {
     display: flex;
-    justify-content: center; /* Centraliza o botão de 3 linhas no topo em qualquer tela */
+    justify-content: space-between; 
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
     position: relative;
+}
+
+/* ADICIONADO: Estilo para o texto Agrinho 2026 no topo */
+.header-logo {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 0.5px;
 }
 
 /* Botão do Menu Hambúrguer (Os 3 traços limpos) */
@@ -53,15 +62,14 @@ header {
     transition: all 0.3s ease-in-out;
 }
 
-/* Menu de Navegação - Oculto por padrão (Será aberto pelo JS) */
+/* MODIFICADO: Menu de Navegação abre alinhado à direita do cabeçalho */
 nav {
     display: none;
     position: absolute;
     top: calc(100% + 15px);
-    left: 50%;
-    transform: translateX(-50%);
+    right: 0; /* Alinha com a borda direita da tela */
     width: 90%;
-    max-width: 400px;
+    max-width: 300px; /* Reduzido levemente para combinar com a lateral */
     background: #da5d5d;
     padding: 20px;
     border-radius: 8px;
@@ -166,7 +174,6 @@ section p {
 /* IMAGEM TOTALMENTE RESPONSIVA (Celular e Computador) */
 .theme-image {
     width: 100%;
-    /* Mantém a proporção correta da imagem em qualquer tamanho de tela */
     aspect-ratio: 16 / 9; 
     max-height: 500px;
     margin-top: 25px;
