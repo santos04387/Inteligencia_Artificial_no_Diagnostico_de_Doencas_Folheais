@@ -157,13 +157,13 @@ section p {
     text-align: justify;
 }
 
-/* Elemento de Imagem Temática */
+/* Elemento de Imagem Temática - LINK CORRIGIDO DA CLARO */
 .theme-image {
     width: 100%;
-    height: 300px;
+    height: 350px;
     margin-top: 25px;
     border-radius: 8px;
-    background-image: url('https://unsplash.com');
+    background-image: url('https://claro.com.br');
     background-size: cover;
     background-position: center;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -224,6 +224,6 @@ footer {
     }
 
     .theme-image {
-        height: 400px; /* Imagem maior em telas grandes */
+        height: 450px; /* Imagem maior e mais nítida em monitores grandes */
     }
 }
