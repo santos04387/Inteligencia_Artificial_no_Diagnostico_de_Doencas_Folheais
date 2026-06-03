@@ -1,15 +1,16 @@
-const menuToggle = document.getElementById('menu-toggle');
+ const menuToggle = document.getElementById('menu-toggle');
 const navbar = document.getElementById('navbar');
 
+// Escuta o clique no botão das 3 barras
 menuToggle.addEventListener('click', () => {
-    // Abre/fecha o menu de links
+    // Abre ou fecha a janela com a lista de links
     navbar.classList.toggle('active');
     
-    // Transforma as 3 barrinhas em um botão de fechar (X)
+    // Altera a classe CSS do botão para transformá-lo visualmente em um 'X'
     menuToggle.classList.toggle('open');
 });
 
-// Garante uma boa experiência fechando o menu ao clicar em qualquer link
+// Fecha o menu de forma automática ao clicar em qualquer link (melhora o uso no smartphone)
 const navLinks = document.querySelectorAll('#navbar a');
 navLinks.forEach(link => {
     link.addEventListener('click', () => {

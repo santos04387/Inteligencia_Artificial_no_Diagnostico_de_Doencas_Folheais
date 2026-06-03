@@ -4,45 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IA no Diagnóstico de Doenças Foliares</title>
-    <link rel="stylesheet" href="style.css">udo
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="menu-toggle" id="menu-toggle">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+        <div class="header-container">
+            <!-- Botão de 3 barras (Hambúrguer) - Único elemento visível inicialmente no mobile -->
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+            
+            <!-- Menu compacto com símbolos minimalistas em vez de nomes longos -->
+            <nav id="navbar">
+                <ul>
+                    <li><a href="#home">🏠 Home</a></li>
+                    <li><a href="#sobre">ℹ️ Sobre</a></li>
+                    <li><a href="#tecnologia">🔬 Tecnologia</a></li>
+                    <li><a href="#beneficios">🌱 Benefícios</a></li>
+                    <li><a href="#contato">📞 Contato</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav id="navbar">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#tecnologia">Tecnologia</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
     </header>
 
     <main>
         <section id="home">
             <h1>Inteligência Artificial no Diagnóstico de Doenças Foliares</h1>
-            <p>Descubra como a IA ajuda a identificar doenças em plantas de forma rápida e precisa.</p>
+            <p>A agricultura moderna exige respostas rápidas. Nossa tecnologia utiliza modelos avançados de visão computacional para identificar pragas, fungos e deficiências nutricionais diretamente pelas fotos das folhas, garantindo a saúde da sua lavoura em tempo real.</p>
         </section>
 
         <section id="sobre">
-            <h2>Sobre</h2>
-            <p>A aplicação de IA na agricultura permite detectar doenças foliares usando imagens das folhas, auxiliando agricultores e pesquisadores.</p>
+            <h2>Sobre o Projeto</h2>
+            <p>O diagnóstico precoce é o maior aliado do produtor rural. Anualmente, bilhões de dólares são perdidos devido a patógenos que se espalham silenciosamente pelas plantações. Este projeto une a ciência agronômica à tecnologia de ponta para democratizar o acesso a diagnósticos precisos.</p>
+            <p>Basta uma foto tirada pelo celular para que o sistema analise os padrões de coloração, necroses e deformações na superfície foliar, entregando um laudo instantâneo.</p>
         </section>
 
         <section id="tecnologia">
-            <h2>Tecnologia</h2>
-            <p>Redes neurais convolucionais, aprendizado profundo e visão computacional são algumas das tecnologias usadas no diagnóstico automático.</p>
+            <h2>Tecnologia e Arquitetura da IA</h2>
+            <p>O coração do nosso sistema é baseado em <strong>Redes Neurais Convolucionais (CNNs)</strong>, uma arquitetura de aprendizado profundo (Deep Learning) projetada especificamente para imitar a visão humana e processar dados de pixels.</p>
+            
+            <h3>1. Extração de Características Computacionais</h3>
+            <p>Diferente de algoritmos tradicionais, a CNN segmenta a imagem da folha em camadas. As primeiras camadas identificam bordas e contornos; as intermediárias reconhecem texturas e manchas; já as camadas finais cruzam esses dados para entender se o padrão geométrico corresponde a uma patologia específica.</p>
+
+            <h3>2. Treinamento com Big Data Botânico</h3>
+            <p>O modelo foi submetido a um treinamento supervisionado utilizando bancos de dados globais (como o PlantVillage), contendo mais de 50.000 imagens validadas por engenheiros agrônomos. Através do processo de retropropagação (Backpropagation), a IA ajusta seus pesos matemáticos para reduzir a margem de erro a menos de 3%.</p>
+
+            <h3>3. Processamento de Nuance e Diagnóstico Diferencial</h3>
+            <p>A inteligência artificial consegue diferenciar nuances extremamente sutis no campo. Ela analisa o gradiente de cor para separar, por exemplo, o estresse hídrico (falta de água) de uma infecção bacteriana em estágio inicial ou de uma queima provocada por fitotoxicidade (excesso de defensivos).</p>
+        </section>
+
+        <section id="beneficios">
+            <h2>Benefícios para o Campo</h2>
+            <p>A aplicação desta tecnologia traz vantagens imediatas para o manejo agrícola:</p>
+            <ul>
+                <li><strong>Redução de Custos:</strong> Aplicação defensiva direcionada apenas nas áreas afetadas.</li>
+                <li><strong>Sustentabilidade:</strong> Menor uso de produtos químicos no ecossistema.</li>
+                <li><strong>Produtividade:</strong> Ação rápida antes que a doença se espalhe por todo o talhão.</li>
+                <li><strong>Acessibilidade:</strong> Assistência técnica virtual disponível 24 horas por dia.</li>
+            </ul>
         </section>
 
         <section id="contato">
-            <h2>Contato</h2>
-            <p>Para mais informações, entre em contato: <a href="mailto:contato@iaagro.com">contato@iaagro.com</a></p>
+            <h2>Contato e Parcerias</h2>
+            <p>Se você é pesquisador, engenheiro agrônomo ou produtor rural e quer testar nossa tecnologia, entre em contato conosco:</p>
+            <p>E-mail: <a href="mailto:contato@iaagro.com">contato@iaagro.com</a></p>
         </section>
     </main>
 
@@ -52,4 +79,4 @@
 
     <script src="main.js"></script>
 </body>
-</html>ml>
+</html>
