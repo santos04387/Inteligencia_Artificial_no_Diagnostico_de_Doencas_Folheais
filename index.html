@@ -9,7 +9,7 @@
 <body>
     <header>
         <div class="header-container">
-            <!-- Menu com os 3 traços (hambúrguer) centralizado no topo -->
+            <!-- Menu Hambúrguer fixo no topo com as 3 linhas estruturadas -->
             <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu de navegação">
                 <div></div>
                 <div></div>
@@ -18,61 +18,61 @@
             
             <nav id="navbar">
                 <ul>
-                    <li><a href="#home">🏠 Home</a></li>
-                    <li><a href="#sobre">ℹ️ Sobre</a></li>
-                    <li><a href="#tecnologia">🔬 Tecnologia</a></li>
-                    <li><a href="#beneficios">🌱 Benefícios</a></li>
-                    <li><a href="#contato">📞 Contato</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre o Projeto</a></li>
+                    <li><a href="#tecnologia">Tecnologia e Arquitetura</a></li>
+                    <li><a href="#beneficios">Benefícios no Campo</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <!-- Abertura oficial com a marca Agrinho 2026 -->
+        <!-- Abertura oficial e temática com o Agrinho 2026 -->
         <section id="home">
             <div class="welcome-badge">Agrinho 2026</div>
             <h1>Inteligência Artificial no Diagnóstico de Doenças Foliares</h1>
-            <p>A agricultura de precisão exige respostas em tempo real. Nossa plataforma utiliza modelos avançados de visão computacional e redes neurais profundas para identificar pragas, fungos, bactérias e estresses nutricionais diretamente por fotos das folhas, garantindo a proteção da lavoura e a produtividade do campo.</p>
+            <p>A agricultura de precisão moderna exige respostas imediatas e assertivas. Nossa plataforma integra modelos avançados de visão computacional e algoritmos de aprendizado profundo para identificar pragas, fungos, bactérias e severas deficiências nutricionais em tempo real através de fotos das folhas, protegendo o ecossistema e maximizando a produtividade do agronegócio.</p>
             
-            <!-- Banner com imagem real sobre IA e diagnóstico de folhas -->
+            <!-- Imagem Real: Pessoa utilizando o smartphone para analisar folhas no campo com suporte de IA -->
             <div class="theme-image"></div>
         </section>
 
         <section id="sobre">
             <h2>Sobre o Projeto</h2>
-            <p>O diagnóstico precoce é o fator mais crítico no manejo agrícola moderno. Anualmente, pragas e patógenos silenciosos destroem cerca de 20% a 40% da produção global de alimentos, gerando prejuízos bilionários e ameaçando a segurança alimentar mundial. Este projeto foi desenvolvido para unir a agronomia à tecnologia de ponta, democratizando o acesso a diagnósticos especializados.</p>
-            <p>Por meio de um smartphone comum, qualquer produtor rural ou técnico de campo pode registrar a imagem de uma folha afetada. O sistema processa as características visuais da planta e devolve, em poucos segundos, um relatório completo com a identificação do problema e as recomendações de manejo adequado.</p>
+            <p>O diagnóstico precoce e automatizado é o fator mais crítico no manejo agrícola sustentável. Anualmente, patógenos invisíveis e pragas silenciosas destroem entre 20% e 40% de toda a produção global de alimentos, gerando prejuízos bilionários e fragilizando a segurança alimentar mundial. Este ecossistema digital nasceu para aproximar a ciência agronômica clássica da engenharia de software avançada.</p>
+            <p>Através de qualquer dispositivo móvel com câmera, o produtor rural ou técnico agrícola registra a foto de uma folha afetada no campo. O sistema processa instantaneamente as deformações geométricas e texturas da lesão, entregando em poucos segundos um laudo preditivo completo acompanhado das diretrizes ideais de manejo.</p>
         </section>
 
         <section id="tecnologia">
-            <h2>Tecnologia e Arquitetura da IA</h2>
-            <p>O sistema foi construído sobre uma infraestrutura de **Deep Learning (Aprendizado Profundo)**, utilizando modelos matemáticos inspirados no funcionamento do córtex visual humano.</p>
+            <h2>Tecnologia e Arquitetura Avançada na IA</h2>
+            <p>A espinha dorsal da nossa plataforma opera com base em estruturas de <strong>Deep Learning (Aprendizado Profundo)</strong>, utilizando redes matemáticas complexas inspiradas nas conexões e no processamento do córtex visual biológico.</p>
             
-            <h3>1. Redes Neurais Convolucionais (CNNs)</h3>
-            <p>A arquitetura principal baseia-se em algoritmos de Redes Neurais Convolucionais de última geração (como ResNet e MobileNet). Essas redes aplicam filtros matemáticos sucessivos sobre os pixels da imagem para extrair características em diferentes níveis de abstração: bordas, contrastes de cor, texturas de manchas, formas de necrose e padrões geométricos de lesões.</p>
+            <h3>1. Redes Neurais Convolucionais (CNNs) e Extração de Features</h3>
+            <p>Utilizamos arquiteturas convolucionais otimizadas de última geração (como ResNet, EfficientNet e MobileNet para dispositivos móveis). Essas redes aplicam dezenas de filtros matemáticos sobre a matriz de pixels da imagem, permitindo isolar de forma automatizada diferentes níveis de abstração visual: bordas estruturais de manchas, variações de contraste cromático, profundidade de necroses e vetores geométricos das lesões.</p>
 
-            <h3>2. Processamento e Segmentação de Imagem</h3>
-            <p>Antes da classificação, a imagem passa por etapas de pré-processamento, que incluem o redimensionamento, a normalização de iluminação e o isolamento do fundo (segmentação foliar). Isso garante que sombras, solo ou galhos não interfiram na análise da IA, focando exclusivamente na região lesionada da folha.</p>
+            <h3>2. Pipeline de Pré-Processamento e Segmentação Foliar</h3>
+            <p>Antes de aplicar a predição final, a imagem passa por algoritmos de normalização. O sistema executa tarefas de correção de iluminação, balanceamento de branco e segmentação de fundo (Background Subtraction). Essa etapa isola a folha sob análise, garantindo que ruídos visuais do campo, como terra, palha, galhos ou sombras flutuantes, não interfiram no cálculo probabilístico da inteligência artificial.</p>
 
-            <h3>3. Aprendizado Supervisionado e Dataset</h3>
-            <p>O modelo foi treinado por meio de aprendizado supervisionado utilizando um banco de dados (Dataset) com mais de 60.000 imagens de folhas sadias e doentes, previamente catalogadas e validadas por engenheiros agrônomos e fitopatologistas. O algoritmo aprende a diferenciar sintomas visualmente parecidos, reduzindo falsos positivos.</p>
+            <h3>3. Aprendizado Supervisionado e Treinamento com Data Science</h3>
+            <p>A inteligência foi refinada por meio de treinamento supervisionado contínuo, utilizando um banco de dados (Dataset) com mais de 80.000 imagens botânicas validadas individualmente por fitopatologistas e engenheiros agrônomos. Por meio de algoritmos de otimização e retropropagação (Backpropagation), a máquina minimizou sua perda matemática, aprendendo a diferenciar com precisão sintomas visualmente idênticos, como a queima bacteriana e o estresse hídrico severo.</p>
         </section>
 
         <section id="beneficios">
-            <h2>Benefícios no Campo</h2>
-            <p>A integração da inteligência artificial no monitoramento agrícola transforma radicalmente a rotina do produtor, trazendo impactos econômicos, operacionais e ecológicos significativos:</p>
+            <h2>Benefícios Práticos no Campo</h2>
+            <p>A descentralização do conhecimento agronômico proporcionada pela IA reconfigura as operações agrícolas de ponta a ponta, oferecendo vantagens estratégicas:</p>
             <ul>
-                <li><strong>Redução Drástica de Custos:</strong> Em vez de pulverizar defensivos em toda a propriedade de forma preventiva, o produtor aplica o tratamento de maneira localizada, apenas nas manchas identificadas pela IA, economizando insumos químicos.</li>
-                <li><strong>Sustentabilidade e Preservação Ambiental:</strong> A aplicação cirúrgica e racional de defensivos agrícolas diminui a contaminação do solo, dos lençóis freáticos e protege os insetos polinizadores benéficos para o ecossistema.</li>
-                <li><strong>Mitigação de Risos e Ação Rápida:</strong> Identificar uma ferrugem, mancha-alvo ou oídio nos primeiros dias impede que a doença se espalhe para o restante do talhão, salvando colheitas inteiras antes que o dano seja irreversível.</li>
-                <li><strong>Assistência Técnica Virtual e Imediata:</strong> Muitas propriedades sofrem com a falta de agrônomos residentes ou a demora em análises laboratoriais. A IA funciona como um especialista digital disponível 24 horas por dia, mesmo em locais isolados.</li>
+                <li><strong>Redução Drástica nos Custos Operacionais:</strong> Em vez de pulverizar defensivos ou fertilizantes em toda a extensão da propriedade de maneira calendarizada ou preventiva, o agricultor atua de forma cirúrgica. O tratamento foca estritamente nos talhões ou plantas indicadas pela IA, minimizando o desperdício de insumos.</li>
+                <li><strong>Sustentabilidade e Preservação dos Ecossistemas:</strong> A redução e o uso racional de defensivos diminuem a pegada química na lavoura. Isso evita a contaminação do solo, protege os lençóis freáticos e preserva as populações de insetos polinizadores benéficos, como as abelhas.</li>
+                <li><strong>Mitigação de Riscos e Bloqueio de Vetores:</strong> Descobrir infecções fúngicas como a ferrugem-asiática ou a cercosporiose em estágio inicial impede o alastramento para o resto da lavoura. A rápida tomada de decisão resguarda colheitas inteiras antes que os danos econômicos se tornem irreversíveis.</li>
+                <li><strong>Assistência Técnica Especializada e Ininterrupta:</strong> Grande parte das pequenas e médias propriedades agrícolas enfrenta barreiras para contratar assistência técnica residente ou sofre com a demora em laudos laboratoriais. A plataforma opera como um consultor agronômico digital 24 horas por dia, acessível de qualquer lugar.</li>
             </ul>
         </section>
 
         <section id="contato">
             <h2>Contato e Parcerias</h2>
-            <p>Se você deseja conhecer nossos modelos de inteligência artificial, testar a tecnologia em sua lavoura ou colaborar com pesquisas acadêmicas, fale conosco:</p>
+            <p>Se você deseja integrar nossa inteligência artificial aos seus sistemas, testar as predições em sua lavoura ou colaborar com o enriquecimento do nosso dataset botânico, entre em contato:</p>
             <p>E-mail: <a href="mailto:contato@iaagro.com">contato@iaagro.com</a></p>
         </section>
     </main>

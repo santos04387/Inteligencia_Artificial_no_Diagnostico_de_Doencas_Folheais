@@ -8,11 +8,11 @@
 
 body {
     line-height: 1.6;
-    background-color: #f0f4f8;
+    background-color: #f4f7fc;
     color: #2c3e50;
 }
 
-/* Cabeçalho Tecnológico Azul */
+/* Cabeçalho com paleta de Azul Tecnológico */
 header {
     background: #0d47a1;
     color: white;
@@ -20,19 +20,19 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
 }
 
 .header-container {
     display: flex;
-    justify-content: center; /* Centraliza os 3 traços no topo */
+    justify-content: center; /* Centraliza o botão de 3 linhas no topo */
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
     position: relative;
 }
 
-/* Os 3 Traços do Menu (Menu Hambúrguer Puro - Sem Texto) */
+/* Botão do Menu Hambúrguer (Os 3 traços limpos) */
 .menu-toggle {
     background: none;
     border: none;
@@ -53,7 +53,7 @@ header {
     transition: all 0.3s ease-in-out;
 }
 
-/* Menu de Navegação - Oculto por padrão em telas pequenas */
+/* Menu de Navegação - Oculto por padrão no mobile */
 nav {
     display: none;
     position: absolute;
@@ -83,12 +83,12 @@ nav ul li a {
     transition: color 0.2s;
 }
 
-/* Exibe o menu quando a classe active for inserida pelo JavaScript */
+/* Exibe a navegação ao ativar a classe no JS */
 nav.active {
     display: block;
 }
 
-/* Animação que transforma os 3 traços em um "X" quando ativo */
+/* Animação: Transforma os 3 traços em um X ao abrir */
 .menu-toggle.open div:nth-child(1) {
     transform: translateY(10px) rotate(45deg);
 }
@@ -101,7 +101,7 @@ nav.active {
     transform: translateY(-10px) rotate(-45deg);
 }
 
-/* Área do Conteúdo */
+/* Estrutura do Conteúdo */
 main {
     padding: 30px 20px;
     max-width: 1200px;
@@ -114,7 +114,7 @@ section {
     background: white;
     padding: 35px;
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
 }
 
 /* Emblema do Agrinho 2026 */
@@ -160,13 +160,13 @@ section p {
     text-align: justify;
 }
 
-/* Banner de Imagem sobre IA no Diagnóstico Foliar */
+/* Banner Responsivo - Pessoa analisando folhas com celular e IA */
 .theme-image {
     width: 100%;
     height: 350px;
     margin-top: 25px;
     border-radius: 8px;
-    background-image: url('https://claro.com.br');
+    background-image: url('https://unsplash.com');
     background-size: cover;
     background-position: center;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
@@ -200,30 +200,14 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Responsividade Completa para Computadores e Tablets */
+/* Layout Responsivo para Disktops e Equipamentos Maiores */
 @media (min-width: 768px) {
-    /* Exibe os links de forma fixa na barra superior em telas maiores */
-    .menu-toggle {
-        display: none;
-    }
-
-    nav {
-        display: block;
-        position: static;
-        padding: 0;
-        box-shadow: none;
-    }
-
-    nav ul {
-        flex-direction: row;
-        gap: 35px;
+    /* Mantém o menu em modo hambúrguer para obedecer a fixação dos 3 traços no topo */
+    .header-container {
+        justify-content: center;
     }
     
-    nav ul li a:hover {
-        color: #90caf9;
-    }
-
     .theme-image {
-        height: 480px;
+        height: 500px; /* Expande a visualização da imagem em telas de PC */
     }
 }

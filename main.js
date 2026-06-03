@@ -1,13 +1,13 @@
 const menuToggle = document.getElementById('menu-toggle');
 const navbar = document.getElementById('navbar');
 
-// Escuta os cliques no botão dos 3 traços
+// Aciona a abertura/fechamento ao clicar nos 3 traços do menu hambúrguer
 menuToggle.addEventListener('click', () => {
-    navbar.classList.toggle('active'); // Abre ou fecha a caixinha dos menus
-    menuToggle.classList.toggle('open'); // Roda as barrinhas para formar o caractere 'X'
+    navbar.classList.toggle('active'); // Exibe a lista suspensa de opções
+    menuToggle.classList.toggle('open'); // Executa a transformação visual para o 'X'
 });
 
-// Garante que o menu feche sozinho ao clicar em qualquer item (ótimo para telas touch)
+// Fecha o menu de forma inteligente ao clicar em qualquer uma das opções de navegação
 const navLinks = document.querySelectorAll('#navbar a');
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
