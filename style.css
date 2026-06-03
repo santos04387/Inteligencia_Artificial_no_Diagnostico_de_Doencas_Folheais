@@ -1,4 +1,4 @@
-/* Reset básico */
+* /* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -25,14 +25,14 @@ header {
 
 .header-container {
     display: flex;
-    justify-content: flex-start; /* Garante as barras alinhadas no canto */
+    justify-content: flex-start;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
     position: relative;
 }
 
-/* O Botão de 3 Barras (Menu Hambúrguer) */
+/* Botão de 3 Barras (Menu Hambúrguer) */
 .menu-toggle {
     background: none;
     border: none;
@@ -45,7 +45,6 @@ header {
     padding: 0;
 }
 
-/* Estilização das 3 linhas brancas */
 .menu-toggle div {
     height: 3.5px;
     width: 100%;
@@ -54,7 +53,7 @@ header {
     transition: all 0.3s ease;
 }
 
-/* Menu de Navegação Oculto no Mobile por padrão */
+/* Menu Mobile Oculto */
 nav {
     display: none;
     position: absolute;
@@ -82,12 +81,11 @@ nav ul li a {
     padding: 5px 0;
 }
 
-/* Ativa o menu quando clicado no mobile */
 nav.active {
     display: block;
 }
 
-/* Efeito de rotação: transforma as 3 barras em um 'X' ao abrir */
+/* Transforma 3 barras em X */
 .menu-toggle.open div:nth-child(1) {
     transform: translateY(9px) rotate(45deg);
 }
@@ -114,6 +112,21 @@ section {
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+}
+
+/* Emblema do Agrinho 2026 */
+.welcome-badge {
+    display: inline-block;
+    background: #FF9800;
+    color: white;
+    font-weight: bold;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 5px rgba(255, 152, 0, 0.3);
 }
 
 section h1 {
@@ -144,6 +157,18 @@ section p {
     text-align: justify;
 }
 
+/* Elemento de Imagem Temática */
+.theme-image {
+    width: 100%;
+    height: 300px;
+    margin-top: 25px;
+    border-radius: 8px;
+    background-image: url('https://unsplash.com');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
 section ul {
     margin-left: 20px;
     margin-bottom: 15px;
@@ -172,14 +197,14 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Responsivo para Telas Maiores (Desktop e Tablets deitados) */
+/* Responsivo para Telas Maiores */
 @media (min-width: 768px) {
     .menu-toggle {
-        display: none; /* Esconde as 3 barras em telas grandes */
+        display: none;
     }
 
     .header-container {
-        justify-content: center; /* Centraliza o menu limpo no PC */
+        justify-content: center;
     }
 
     nav {
@@ -196,5 +221,9 @@ footer {
     
     nav ul li a:hover {
         color: #A5D6A7;
+    }
+
+    .theme-image {
+        height: 400px; /* Imagem maior em telas grandes */
     }
 }
