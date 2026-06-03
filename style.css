@@ -32,7 +32,7 @@ header {
     position: relative;
 }
 
-/* Botão de 3 Barras (Menu Hambúrguer) */
+/* 3 Barrinhas do Menu (Mobile) */
 .menu-toggle {
     background: none;
     border: none;
@@ -53,7 +53,7 @@ header {
     transition: all 0.3s ease;
 }
 
-/* Menu Mobile Oculto */
+/* Menu Oculto Inicialmente */
 nav {
     display: none;
     position: absolute;
@@ -85,7 +85,7 @@ nav.active {
     display: block;
 }
 
-/* Transforma 3 barras em X */
+/* Transforma o menu de 3 barras em um X quando ativado */
 .menu-toggle.open div:nth-child(1) {
     transform: translateY(9px) rotate(45deg);
 }
@@ -98,7 +98,7 @@ nav.active {
     transform: translateY(-9px) rotate(-45deg);
 }
 
-/* Conteúdo Principal */
+/* Área de Conteúdo */
 main {
     padding: 30px 20px;
     max-width: 1200px;
@@ -114,7 +114,7 @@ section {
     box-shadow: 0 4px 6px rgba(0,0,0,0.02);
 }
 
-/* Emblema do Agrinho 2026 */
+/* Distintivo Agrinho 2026 */
 .welcome-badge {
     display: inline-block;
     background: #FF9800;
@@ -126,7 +126,6 @@ section {
     margin-bottom: 15px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    box-shadow: 0 2px 5px rgba(255, 152, 0, 0.3);
 }
 
 section h1 {
@@ -157,50 +156,29 @@ section p {
     text-align: justify;
 }
 
-/* Imagem Conceitual Gerada 100% por Código CSS (Design Tecnológico/Agrícola) */
-.theme-image {
+/* Estilização da Seção Visual */
+.image-wrapper {
     width: 100%;
-    height: 350px;
     margin-top: 25px;
     border-radius: 8px;
-    background: linear-gradient(135deg, #1B5E20 0%, #4CAF50 50%, #00E676 100%);
-    position: relative;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.visual-placeholder {
+    width: 100%;
+    height: 350px;
+    background: linear-gradient(135deg, #1B5E20, #4CAF50);
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
-}
-
-/* Detalhe de grade tecnológica na imagem */
-.theme-image::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
-                      linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px);
-    background-size: 20px 20px;
-}
-
-/* Texto futurista sobreposto na imagem gerada */
-.image-overlay-text {
-    position: relative;
-    color: white;
+    color: rgba(255, 255, 255, 0.9);
     font-family: monospace;
-    font-size: 1.5rem;
     font-weight: bold;
-    letter-spacing: 3px;
-    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
-    border: 2px dashed rgba(255,255,255,0.6);
-    padding: 10px 20px;
-    border-radius: 4px;
-    animation: pulse 2s infinite alternate;
-}
-
-@keyframes pulse {
-    0% { transform: scale(1); opacity: 0.8; }
-    100% { transform: scale(1.05); opacity: 1; }
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    border: 4px dashed rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
 }
 
 section ul {
@@ -219,10 +197,6 @@ section a {
     text-decoration: none;
 }
 
-section a:hover {
-    text-decoration: underline;
-}
-
 footer {
     text-align: center;
     padding: 25px;
@@ -231,7 +205,7 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Responsivo para Telas Maiores */
+/* Responsividade de Tela */
 @media (min-width: 768px) {
     .menu-toggle {
         display: none;
@@ -252,12 +226,8 @@ footer {
         flex-direction: row;
         gap: 35px;
     }
-    
-    nav ul li a:hover {
-        color: #A5D6A7;
-    }
 
-    .theme-image {
+    .visual-placeholder {
         height: 450px;
     }
 }
