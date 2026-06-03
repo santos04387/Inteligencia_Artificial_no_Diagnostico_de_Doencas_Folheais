@@ -2,14 +2,19 @@ const menuToggle = document.getElementById('menu-toggle');
 const navbar = document.getElementById('navbar');
 const navLinks = document.querySelectorAll('#navbar a');
 
-// Liga/Desliga as classes de abertura do menu
+// Função para abrir/fechar o menu
 const toggleMenu = () => {
     navbar.classList.toggle('active');
     menuToggle.classList.toggle('open');
 };
 
-// Abre e fecha no botão hambúrguer
+// Evento do botão hambúrguer
 menuToggle.addEventListener('click', toggleMenu);
 
-// Fecha o menu ao clicar em qualquer link
-navLinks.forEach(link => link.addEventListener('click', toggleMenu));
+// Fecha o menu ao clicar em qualquer item da lista
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        navbar.classList.remove('active');
+        menuToggle.classList.remove('open');
+    });
+});
