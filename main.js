@@ -1,4 +1,4 @@
- const menuToggle = document.getElementById('menu-toggle');
+const menuToggle = document.getElementById('menu-toggle');
 const navbar = document.getElementById('navbar');
 
 // Escuta o clique nas 3 barras do menu
