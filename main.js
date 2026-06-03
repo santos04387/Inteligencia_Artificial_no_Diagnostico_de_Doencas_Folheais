@@ -1,13 +1,13 @@
 const menuToggle = document.getElementById('menu-toggle');
 const navbar = document.getElementById('navbar');
 
-// Alterna o estado do menu ao clicar nas 3 barras
+// Escuta os cliques no botão dos 3 traços
 menuToggle.addEventListener('click', () => {
-    navbar.classList.toggle('active');
-    menuToggle.classList.toggle('open');
+    navbar.classList.toggle('active'); // Abre ou fecha a caixinha dos menus
+    menuToggle.classList.toggle('open'); // Roda as barrinhas para formar o caractere 'X'
 });
 
-// Fecha o menu de forma automática ao selecionar uma opção
+// Garante que o menu feche sozinho ao clicar em qualquer item (ótimo para telas touch)
 const navLinks = document.querySelectorAll('#navbar a');
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
