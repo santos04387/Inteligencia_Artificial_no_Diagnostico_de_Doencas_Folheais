@@ -16,59 +16,61 @@
 </header>
 
 <nav id="menu">
-    <ul>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#tecnologia">Tecnologia</a></li>
-        <li><a href="#solucoes">Soluções</a></li>
-        <li><a href="#estrategias">Estratégias</a></li>
-    </ul>
+<ul>
+<li><a href="#sobre">Sobre</a></li>
+<li><a href="#tecnologia">Tecnologia</a></li>
+<li><a href="#solucoes">Soluções</a></li>
+<li><a href="#ia">IA</a></li>
+</ul>
 </nav>
+
+<canvas id="particles"></canvas>
 
 <main>
 
 <section class="hero reveal">
-    <h2>IA no Diagnóstico de Doenças Foliares</h2>
-    <p>Tecnologia moderna ajudando a agricultura a produzir mais e melhor.</p>
+<h2>IA no Diagnóstico de Doenças Foliares</h2>
+<p>Tecnologia que identifica doenças nas plantas com precisão</p>
 </section>
 
 <section id="sobre" class="card reveal">
-    <img src="https://images.unsplash.com/photo-1598514982846-1cf7b9b5d7e4" alt="">
-    <h2>O que é essa tecnologia?</h2>
-    <p>
-        A Inteligência Artificial permite identificar doenças em folhas através de imagens.
-        Sistemas analisam padrões como manchas, cores e deformações.
-    </p>
+<img src="https://images.unsplash.com/photo-1598514982846-1cf7b9b5d7e4">
+<p>
+A Inteligência Artificial analisa imagens de folhas para detectar doenças rapidamente,
+ajudando agricultores a tomar decisões melhores.
+</p>
 </section>
 
 <section id="tecnologia" class="card reveal">
-    <img src="https://images.unsplash.com/photo-1581093458791-9d3c1b8a3b27" alt="">
-    <h2>Tecnologia</h2>
-    <p>
-        Utiliza visão computacional e redes neurais para classificar doenças com alta precisão.
-        Drones e sensores ajudam no monitoramento constante.
-    </p>
+<h2>Tecnologia</h2>
+<p>
+Uso de visão computacional, redes neurais e sensores inteligentes para monitoramento agrícola.
+</p>
 </section>
 
 <section id="solucoes" class="card reveal">
-    <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" alt="">
-    <h2>Soluções</h2>
-    <ul>
-        <li>Apps de diagnóstico por imagem</li>
-        <li>Drones agrícolas</li>
-        <li>Sistemas inteligentes</li>
-        <li>Monitoramento em tempo real</li>
-    </ul>
+<h2>Soluções</h2>
+<ul>
+<li>Apps de diagnóstico</li>
+<li>Drones agrícolas</li>
+<li>Monitoramento em tempo real</li>
+</ul>
 </section>
 
-<section id="estrategias" class="card reveal">
-    <img src="https://images.unsplash.com/photo-1523741543316-beb7fc7023d8" alt="">
-    <h2>Estratégias</h2>
-    <ul>
-        <li>Uso contínuo da tecnologia</li>
-        <li>Análise de dados agrícolas</li>
-        <li>Prevenção antecipada</li>
-        <li>Capacitação no campo</li>
-    </ul>
+<section class="card reveal">
+<h2>Produção otimizada</h2>
+<h1 id="contador">0%</h1>
+</section>
+
+<section id="ia" class="card reveal">
+<h2>Simulador de IA 🤖</h2>
+<input type="file" id="upload">
+<p id="resultado"></p>
+</section>
+
+<section class="card reveal">
+<h2>Gráfico de eficiência 📊</h2>
+<canvas id="grafico"></canvas>
 </section>
 
 <button id="topBtn" onclick="topo()">⬆</button>
@@ -77,4 +79,4 @@
 
 <script src="script.js"></script>
 </body>
-</html></html>
+</html>
