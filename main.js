@@ -11,7 +11,7 @@ function topo() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-/* SCROLL ANIMATION */
+/* SCROLL */
 window.addEventListener("scroll", () => {
     document.querySelectorAll(".reveal").forEach(el => {
         if (el.getBoundingClientRect().top < window.innerHeight - 100) {
@@ -22,62 +22,47 @@ window.addEventListener("scroll", () => {
 
 /* CONTADOR */
 let count = 0;
-let intervalo = setInterval(() => {
+let i = setInterval(() => {
     count++;
     document.getElementById("contador").innerText = count + "%";
-    if (count >= 100) clearInterval(intervalo);
+    if (count >= 100) clearInterval(i);
 }, 30);
 
 /* IA FAKE */
 document.getElementById("upload").addEventListener("change", () => {
-    let resultados = ["Saudável 🌿", "Doença detectada ⚠️", "Análise inconclusiva 🤖"];
-    let r = resultados[Math.floor(Math.random() * resultados.length)];
-    document.getElementById("resultado").innerText = r;
+    let r = ["Saudável 🌿","Doença detectada ⚠️","Inconclusivo 🤖"];
+    document.getElementById("resultado").innerText =
+        r[Math.floor(Math.random()*r.length)];
 });
 
 /* GRÁFICO */
-let canvas = document.getElementById("grafico");
-let ctx = canvas.getContext("2d");
-
-canvas.width = 300;
-canvas.height = 150;
-
-ctx.fillStyle = "blue";
-ctx.fillRect(10, 50, 40, 100);
-ctx.fillRect(70, 30, 40, 120);
-ctx.fillRect(130, 10, 40, 140);
+let c = document.getElementById("grafico").getContext("2d");
+c.fillStyle = "blue";
+c.fillRect(20,50,40,100);
+c.fillRect(80,30,40,120);
+c.fillRect(140,10,40,140);
 
 /* PARTÍCULAS */
 let p = document.getElementById("particles");
-let c = p.getContext("2d");
-
+let ctx = p.getContext("2d");
 p.width = window.innerWidth;
 p.height = window.innerHeight;
 
-let particles = [];
-
-for (let i = 0; i < 50; i++) {
-    particles.push({
-        x: Math.random() * p.width,
-        y: Math.random() * p.height,
-        r: Math.random() * 3
-    });
+let pts = [];
+for(let i=0;i<50;i++){
+    pts.push({x:Math.random()*p.width,y:Math.random()*p.height,r:Math.random()*3});
 }
 
-function draw() {
-    c.clearRect(0, 0, p.width, p.height);
-    c.fillStyle = "rgba(100,150,255,0.5)";
-
-    particles.forEach(pt => {
-        c.beginPath();
-        c.arc(pt.x, pt.y, pt.r, 0, Math.PI * 2);
-        c.fill();
-
-        pt.y += 0.5;
-        if (pt.y > p.height) pt.y = 0;
+function draw(){
+    ctx.clearRect(0,0,p.width,p.height);
+    ctx.fillStyle="rgba(100,150,255,0.5)";
+    pts.forEach(pt=>{
+        ctx.beginPath();
+        ctx.arc(pt.x,pt.y,pt.r,0,Math.PI*2);
+        ctx.fill();
+        pt.y+=0.5;
+        if(pt.y>p.height) pt.y=0;
     });
-
     requestAnimationFrame(draw);
 }
-
 draw();

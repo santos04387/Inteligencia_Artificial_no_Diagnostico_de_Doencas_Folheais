@@ -23,8 +23,8 @@ header {
     background: var(--azul);
     color: white;
     display: flex;
-    padding: 15px;
     align-items: center;
+    padding: 15px;
 }
 
 header h1 {
@@ -57,6 +57,12 @@ nav a {
     text-decoration: none;
 }
 
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 40px;
+}
+
 /* CARDS */
 .card {
     background: var(--card);
@@ -68,12 +74,6 @@ nav a {
 .card img {
     width: 100%;
     border-radius: 10px;
-}
-
-/* HERO */
-.hero {
-    text-align: center;
-    padding: 40px;
 }
 
 /* BOTÃO */
