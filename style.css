@@ -15,7 +15,7 @@ body {
   color: #2c3e50;
 }
 
-/* MENU LATERAL */
+/* SIDEBAR */
 .sidebar {
   position: fixed;
   left: -250px;
