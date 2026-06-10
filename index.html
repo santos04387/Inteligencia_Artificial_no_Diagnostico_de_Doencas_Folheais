@@ -1,132 +1,100 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Agrinho 2026</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>IA no Diagnóstico de Doenças Folheais</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <div class="menu-icon" onclick="toggleMenu()">☰</div>
-    <h1>Agrinho 2026</h1>
-    <button onclick="toggleDarkMode()">🌙</button>
-</header>
+  <!-- BOTÃO MENU -->
+  <div class="menu-btn" onclick="toggleMenu()">☰</div>
 
-<nav id="menu">
-<ul>
-<li><a href="#sobre">Sobre</a></li>
-<li><a href="#tecnologia">Tecnologia</a></li>
-<li><a href="#solucoes">Soluções</a></li>
-<li><a href="#estrategias">Estratégias</a></li>
-<li><a href="#ia">IA</a></li>
-</ul>
-</nav>
+  <!-- MENU LATERAL -->
+  <div class="sidebar" id="sidebar">
+    <a href="#intro">Introdução</a>
+    <a href="#como-funciona">Como Funciona</a>
+    <a href="#tecnologias">Tecnologias</a>
+    <a href="#vantagens">Vantagens</a>
+    <a href="#desafios">Desafios</a>
+    <a href="#futuro">Futuro</a>
+  </div>
 
-<canvas id="particles"></canvas>
+  <!-- CONTEÚDO -->
+  <div class="content">
 
-<main>
+    <h1>🌿 Inteligência Artificial no Diagnóstico de Doenças Folheais</h1>
 
-<section class="hero reveal">
-<h2>Inteligência Artificial no Diagnóstico de Doenças Foliares</h2>
-<p>
-A tecnologia está revolucionando a agricultura, permitindo identificar doenças nas plantas
-de forma rápida, precisa e inteligente.
-</p>
-</section>
+    <section id="intro">
+      <h2>📌 Introdução</h2>
+      <div class="card">
+        <p>
+          A Inteligência Artificial (IA) tem revolucionado a agricultura moderna,
+          especialmente no diagnóstico de doenças folheais.
+        </p>
+      </div>
+    </section>
 
-<section id="sobre" class="card reveal">
-<img src="https://images.unsplash.com/photo-1598514982846-1cf7b9b5d7e4">
-<h2>O que é essa tecnologia?</h2>
-<p>
-A Inteligência Artificial (IA) é uma área da tecnologia que permite que máquinas aprendam
-e tomem decisões baseadas em dados. No campo da agricultura, ela é utilizada para analisar
-imagens de folhas e identificar doenças automaticamente.
-</p>
-<p>
-Por meio de câmeras, celulares ou drones, é possível capturar imagens das plantas.
-Essas imagens são analisadas por algoritmos que reconhecem padrões, como manchas,
-mudanças de cor ou deformações, indicando possíveis doenças.
-</p>
-</section>
+    <section id="como-funciona">
+      <h2>⚙️ Como Funciona</h2>
+      <div class="card">
+        <ul>
+          <li>Coleta de imagens das folhas</li>
+          <li>Processamento por IA</li>
+          <li>Identificação da doença</li>
+        </ul>
+      </div>
+    </section>
 
-<section id="tecnologia" class="card reveal">
-<img src="https://images.unsplash.com/photo-1581093458791-9d3c1b8a3b27">
-<h2>Tecnologia utilizada</h2>
-<p>
-A principal tecnologia usada é a visão computacional, que permite que o computador “enxergue”
-e interprete imagens. Além disso, são utilizadas redes neurais artificiais, que aprendem com milhares
-de exemplos de folhas saudáveis e doentes.
-</p>
-<p>
-Também são utilizados sensores e drones, que ajudam a monitorar grandes áreas de plantação
-de forma automática e eficiente.
-</p>
-</section>
+    <section id="tecnologias">
+      <h2>🤖 Tecnologias</h2>
+      <div class="card">
+        <ul>
+          <li>Machine Learning</li>
+          <li>Deep Learning</li>
+          <li>Visão Computacional</li>
+        </ul>
+      </div>
+    </section>
 
-<section id="solucoes" class="card reveal">
-<img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6">
-<h2>Soluções práticas</h2>
-<p>
-A IA pode ser aplicada de várias formas no campo:
-</p>
-<ul>
-<li>Aplicativos que identificam doenças ao tirar uma foto da folha</li>
-<li>Drones que analisam plantações inteiras</li>
-<li>Sistemas que indicam o melhor tratamento</li>
-<li>Monitoramento em tempo real da saúde das plantas</li>
-</ul>
-<p>
-Essas soluções ajudam a reduzir perdas, economizar recursos e aumentar a produtividade.
-</p>
-</section>
+    <section id="vantagens">
+      <h2>✅ Vantagens</h2>
+      <div class="card">
+        <ul>
+          <li>Alta precisão</li>
+          <li>Rapidez no diagnóstico</li>
+          <li>Redução de custos</li>
+        </ul>
+      </div>
+    </section>
 
-<section id="estrategias" class="card reveal">
-<img src="https://images.unsplash.com/photo-1523741543316-beb7fc7023d8">
-<h2>Estratégias no uso da IA</h2>
-<p>
-Para utilizar a tecnologia de forma eficiente, é importante:
-</p>
-<ul>
-<li>Realizar monitoramento constante das plantações</li>
-<li>Utilizar dados confiáveis</li>
-<li>Investir em tecnologia e capacitação</li>
-<li>Agir rapidamente ao identificar doenças</li>
-</ul>
-<p>
-Essas estratégias garantem uma produção mais sustentável e eficiente.
-</p>
-</section>
+    <section id="desafios">
+      <h2>⚠️ Desafios</h2>
+      <div class="card">
+        <ul>
+          <li>Necessidade de dados</li>
+          <li>Variações ambientais</li>
+        </ul>
+      </div>
+    </section>
 
-<section class="card reveal">
-<h2>Impacto na produção 📈</h2>
-<p>
-Com o uso da Inteligência Artificial, é possível aumentar significativamente a produtividade,
-reduzindo desperdícios e melhorando a qualidade das colheitas.
-</p>
-<h1 id="contador">0%</h1>
-</section>
+    <section id="futuro">
+      <h2>🚀 Futuro</h2>
+      <div class="card">
+        <p>
+          A IA continuará evoluindo e trazendo mais automação para a agricultura.
+        </p>
+      </div>
+    </section>
 
-<section id="ia" class="card reveal">
-<h2>Simulador de IA 🤖</h2>
-<p>
-Envie uma imagem de uma folha para simular uma análise feita por Inteligência Artificial.
-</p>
-<input type="file" id="upload">
-<p id="resultado"></p>
-</section>
+  </div>
 
-<section class="card reveal">
-<h2>Eficiência da IA na agricultura 📊</h2>
-<canvas id="grafico"></canvas>
-</section>
+  <!-- JS -->
+  <script src="script.js"></script>
 
-<button id="topBtn" onclick="topo()">⬆</button>
-
-</main>
-
-<script src="script.js"></script>
 </body>
 </html>
