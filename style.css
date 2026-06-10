@@ -1,21 +1,38 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #e6f2ff;
+:root {
+    --azul: #66b3ff;
+    --bg: #e6f2ff;
+    --card: #fff;
+    --text: #000;
 }
 
+body.dark {
+    --bg: #121212;
+    --card: #1e1e1e;
+    --text: #fff;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    background: var(--bg);
+    color: var(--text);
+}
+
+/* HEADER */
 header {
-    background-color: #66b3ff;
+    background: var(--azul);
     color: white;
-    padding: 15px;
     display: flex;
     align-items: center;
+    padding: 15px;
 }
 
 header h1 {
-    margin: 0 auto;
+    flex: 1;
+    text-align: center;
 }
 
+/* MENU */
 .menu-icon {
     font-size: 25px;
     cursor: pointer;
@@ -24,12 +41,11 @@ header h1 {
 nav {
     position: fixed;
     left: -250px;
-    top: 0;
-    width: 200px;
+    width: 220px;
     height: 100%;
-    background-color: #3399ff;
-    padding-top: 60px;
+    background: #3399ff;
     transition: 0.3s;
+    padding-top: 60px;
 }
 
 nav ul {
@@ -37,28 +53,63 @@ nav ul {
     padding: 0;
 }
 
-nav ul li {
-    padding: 10px;
-    text-align: center;
+nav li {
+    padding: 15px;
 }
 
-nav ul li a {
+nav a {
     color: white;
     text-decoration: none;
 }
 
-nav ul li a:hover {
-    background-color: #66b3ff;
-    display: block;
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 40px;
 }
 
-main {
+/* CARDS */
+.card {
+    background: var(--card);
+    margin: 20px;
     padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-section {
-    margin-bottom: 30px;
-    background-color: white;
-    padding: 15px;
+.card img {
+    width: 100%;
     border-radius: 10px;
+}
+
+/* BOTÃO TOPO */
+#topBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: var(--azul);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* ANIMAÇÃO */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.6s;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+    .card {
+        margin: 10px;
+    }
 }

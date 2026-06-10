@@ -1,22 +1,23 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <title>Agrinho 2026</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agrinho 2026</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header>
-    <div class="menu-icon" onclick="toggleMenu()">
-        ☰
-    </div>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
     <h1>Agrinho 2026</h1>
+    <button onclick="toggleDarkMode()">🌙</button>
 </header>
 
 <nav id="menu">
     <ul>
-        <li><a href="#intro">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
         <li><a href="#tecnologia">Tecnologia</a></li>
         <li><a href="#solucoes">Soluções</a></li>
         <li><a href="#estrategias">Estratégias</a></li>
@@ -24,57 +25,56 @@
 </nav>
 
 <main>
-    <section id="intro">
-        <h2>Inteligência Artificial no Diagnóstico de Doenças Foliares</h2>
-        <p>
-            A Inteligência Artificial (IA) está revolucionando a agricultura moderna,
-            permitindo identificar doenças em folhas de plantas com rapidez e precisão.
-            Isso ajuda produtores a agir mais cedo, reduzindo prejuízos e aumentando a produtividade.
-        </p>
-    </section>
 
-    <section id="tecnologia">
-        <h2>Tecnologia</h2>
-        <p>
-            A IA utiliza algoritmos de aprendizado de máquina e visão computacional para analisar imagens de folhas.
-            Esses sistemas conseguem reconhecer padrões de doenças, como manchas, descoloração e deformações.
-        </p>
-        <p>
-            Tecnologias como redes neurais convolucionais (CNNs) são amplamente utilizadas
-            para classificar doenças com alta precisão.
-        </p>
-    </section>
+<section class="hero reveal">
+    <h2>IA no Diagnóstico de Doenças Foliares</h2>
+    <p>Tecnologia moderna ajudando a agricultura a produzir mais e melhor.</p>
+</section>
 
-    <section id="solucoes">
-        <h2>Soluções</h2>
-        <ul>
-            <li>Aplicativos móveis para diagnóstico instantâneo</li>
-            <li>Drones que monitoram plantações</li>
-            <li>Sensores inteligentes no campo</li>
-            <li>Sistemas automatizados de recomendação de tratamento</li>
-        </ul>
-        <p>
-            Essas soluções permitem uma agricultura mais eficiente e sustentável.
-        </p>
-    </section>
+<section id="sobre" class="card reveal">
+    <img src="https://images.unsplash.com/photo-1598514982846-1cf7b9b5d7e4" alt="">
+    <h2>O que é essa tecnologia?</h2>
+    <p>
+        A Inteligência Artificial permite identificar doenças em folhas através de imagens.
+        Sistemas analisam padrões como manchas, cores e deformações.
+    </p>
+</section>
 
-    <section id="estrategias">
-        <h2>Estratégias</h2>
-        <p>
-            Para aproveitar ao máximo a IA na agricultura, é importante:
-        </p>
-        <ul>
-            <li>Investir em tecnologia e capacitação</li>
-            <li>Utilizar dados de qualidade</li>
-            <li>Monitorar constantemente as plantações</li>
-            <li>Integrar diferentes tecnologias agrícolas</li>
-        </ul>
-        <p>
-            Essas estratégias ajudam a prevenir doenças e melhorar a produção agrícola.
-        </p>
-    </section>
+<section id="tecnologia" class="card reveal">
+    <img src="https://images.unsplash.com/photo-1581093458791-9d3c1b8a3b27" alt="">
+    <h2>Tecnologia</h2>
+    <p>
+        Utiliza visão computacional e redes neurais para classificar doenças com alta precisão.
+        Drones e sensores ajudam no monitoramento constante.
+    </p>
+</section>
+
+<section id="solucoes" class="card reveal">
+    <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" alt="">
+    <h2>Soluções</h2>
+    <ul>
+        <li>Apps de diagnóstico por imagem</li>
+        <li>Drones agrícolas</li>
+        <li>Sistemas inteligentes</li>
+        <li>Monitoramento em tempo real</li>
+    </ul>
+</section>
+
+<section id="estrategias" class="card reveal">
+    <img src="https://images.unsplash.com/photo-1523741543316-beb7fc7023d8" alt="">
+    <h2>Estratégias</h2>
+    <ul>
+        <li>Uso contínuo da tecnologia</li>
+        <li>Análise de dados agrícolas</li>
+        <li>Prevenção antecipada</li>
+        <li>Capacitação no campo</li>
+    </ul>
+</section>
+
+<button id="topBtn" onclick="topo()">⬆</button>
+
 </main>
 
 <script src="script.js"></script>
 </body>
-</html>
+</html></html>
