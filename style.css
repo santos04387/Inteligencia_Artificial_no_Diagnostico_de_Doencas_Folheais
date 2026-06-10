@@ -1,205 +1,64 @@
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Arial, sans-serif;
-}
-
 body {
-    line-height: 1.6;
-    background-color: #f4f7fc;
-    color: #2c3e50;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e6f2ff;
 }
 
-/* Cabeçalho */
 header {
-    background: #2e7d32; /* Verde Agrícola */
+    background-color: #66b3ff;
     color: white;
-    padding: 15px 20px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-}
-
-.header-container {
+    padding: 15px;
     display: flex;
-    justify-content: space-between; 
     align-items: center;
-    max-width: 1200px;
+}
+
+header h1 {
     margin: 0 auto;
-    position: relative;
 }
 
-.header-logo {
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: white;
-    letter-spacing: 0.5px;
-}
-
-/* Menu Hambúrguer */
-.menu-toggle {
-    background: none;
-    border: none;
-    width: 30px;
-    height: 22px;
+.menu-icon {
+    font-size: 25px;
     cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 0;
 }
 
-.menu-toggle div {
-    height: 3.5px;
-    width: 100%;
-    background: white;
-    border-radius: 2px;
-    transition: all 0.3s ease-in-out;
-}
-
-/* Menu de Navegação */
 nav {
-    display: none;
-    position: absolute;
-    top: calc(100% + 15px);
-    right: 0;
-    width: 90%;
-    max-width: 280px;
-    background: #1b5e20; /* Verde Escuro */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    position: fixed;
+    left: -250px;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #3399ff;
+    padding-top: 60px;
+    transition: 0.3s;
 }
 
 nav ul {
     list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 10px;
     text-align: center;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-weight: 600;
-    font-size: 1.1rem;
-    display: block;
-    padding: 8px 0;
 }
 
-nav.active {
+nav ul li a:hover {
+    background-color: #66b3ff;
     display: block;
 }
 
-/* Animação para o 'X' */
-.menu-toggle.open div:nth-child(1) {
-    transform: translateY(9px) rotate(45deg);
-}
-
-.menu-toggle.open div:nth-child(2) {
-    opacity: 0;
-}
-
-.menu-toggle.open div:nth-child(3) {
-    transform: translateY(-9px) rotate(-45deg);
-}
-
-/* Estrutura de Conteúdo */
 main {
-    padding: 20px 15px;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 20px;
 }
 
 section {
-    margin-bottom: 25px;
-    background: white;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.02);
-}
-
-.welcome-badge {
-    display: inline-block;
-    background: #000000;
-    color: white;
-    font-weight: bold;
-    padding: 5px 15px;
-    border-radius: 20px;
-    font-size: 0.85rem;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-}
-
-section h1 {
-    font-size: 1.7rem;
-    color: #1b5e20;
-    margin-bottom: 15px;
-}
-
-section h2 {
-    font-size: 1.4rem;
-    color: #0d47a1; /* Azul Tecnológico */
-    margin-bottom: 15px;
-    border-bottom: 2px solid #e3f2fd;
-    padding-bottom: 5px;
-}
-
-section h3 {
-    font-size: 1.1rem;
-    color: #1565c0;
-    margin: 15px 0 5px 0;
-}
-
-section p {
-    margin-bottom: 12px;
-    color: #455a64;
-    text-align: justify;
-}
-
-.theme-image {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    max-height: 400px;
-    margin-top: 20px;
-    border-radius: 8px;
-    background-image: url('https://unsplash.com');
-    background-size: cover;
-    background-position: center;
-}
-
-section ul {
-    margin-left: 20px;
-    margin-bottom: 15px;
-    color: #455a64;
-}
-
-section ul li {
-    margin-bottom: 8px;
-}
-
-section a {
-    color: #1565c0;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #1c3144;
-    color: #a2a7ab;
-    font-size: 0.85rem;
-}
-
-/* Responsividade */
-@media (min-width: 768px) {
-    main { padding: 40px 20px; }
-    section { padding: 35px; }
-    section h1 { font-size: 2.2rem; }
-    section h2 { font-size: 1.6rem; }
+    margin-bottom: 30px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
 }
